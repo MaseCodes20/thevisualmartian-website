@@ -14,7 +14,7 @@ function MobileMenu() {
     <div>
       <Menu as="div" className="mr-5 md:hidden">
         <Menu.Button className="md:hidden flex justify-center items-center content-center">
-          <MenuIcon className="h-7 md:hidden" />
+          <MenuIcon className="h-7 md:hidden hover:text-pink-500" />
         </Menu.Button>
 
         <Menu.Items className="origin-top-right absolute right-0 mr-5 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
@@ -23,7 +23,7 @@ function MobileMenu() {
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-blue-500"
+                    active && "bg-pink-500 text-white rounded-t-md"
                   }`}
                   onClick={() => router.push("/portraits")}
                 >
@@ -36,7 +36,7 @@ function MobileMenu() {
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-blue-500"
+                    active && "bg-pink-500 text-white"
                   }`}
                   onClick={() => router.push("/landscape")}
                 >
@@ -49,7 +49,7 @@ function MobileMenu() {
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-blue-500"
+                    active && "bg-pink-500 text-white"
                   }`}
                   onClick={() => router.push("/videos")}
                 >
@@ -62,7 +62,7 @@ function MobileMenu() {
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-blue-500"
+                    active && "bg-pink-500 text-white rounded-b-md"
                   }`}
                   onClick={() => router.push("/about")}
                 >

@@ -9,4 +9,7 @@
   .sliderImages {
     @apply h-[620px] mx-2;
   }
+  .navBtn {
+    @apply mx-2 cursor-pointer hover:bg-pink-500 hover:text-white p-1 hover:rounded-md;
+  }
 }

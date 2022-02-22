@@ -21,28 +21,16 @@ function Header() {
           {/* Navbar */}
           <div>
             <div className="hidden md:flex mr-5">
-              <h2
-                className="mx-2 cursor-pointer"
-                onClick={() => router.push("/portraits")}
-              >
+              <h2 className="navBtn" onClick={() => router.push("/portraits")}>
                 PORTRAITS
               </h2>
-              <h2
-                className="mx-2 cursor-pointer"
-                onClick={() => router.push("/landscape")}
-              >
+              <h2 className="navBtn" onClick={() => router.push("/landscape")}>
                 LANDSCAPE
               </h2>
-              <h2
-                className="mx-2 cursor-pointer"
-                onClick={() => router.push("/videos")}
-              >
+              <h2 className="navBtn" onClick={() => router.push("/videos")}>
                 VIDEOS
               </h2>
-              <h2
-                className="mx-2 cursor-pointer"
-                onClick={() => router.push("/about")}
-              >
+              <h2 className="navBtn" onClick={() => router.push("/about")}>
                 ABOUT
               </h2>
             </div>
