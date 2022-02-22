@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu";
 function Header() {
   const router = useRouter();
   return (
-    <div className="w-full fixed bg-green-400">
+    <div className="w-full fixed bg-white z-10">
       <div className="my-5">
         <div className="flex justify-between items-center">
           {/* Name or Logo */}

@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import HomeImageSlider from "../components/HomeImageSlider";
+import { HomeSliderData } from "../Data/HomeSliderData";
 
 export default function Home() {
   return (
@@ -13,7 +15,9 @@ export default function Home() {
       <div className="relative h-screen">
         <Header />
         {/* Image slider */}
-        <h1 className="text-center font-bold">The Visual Martian</h1>
+
+        <HomeImageSlider slides={HomeSliderData} />
+
         <Footer />
       </div>
     </div>
