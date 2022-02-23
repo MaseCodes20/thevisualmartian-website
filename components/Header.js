@@ -1,10 +1,14 @@
 import { useRouter } from "next/router";
 import React from "react";
+import { useRecoilState } from "recoil";
+import { bookingModalState } from "../atoms/modalAtom";
 import MobileMenu from "./MobileMenu";
 import VisualsMenu from "./VisualsMenu";
 
 function Header() {
   const router = useRouter();
+  const [showModal, setShowModal] = useRecoilState(bookingModalState);
+
   return (
     <div className="w-full fixed bg-white z-10">
       <div className="my-5">
@@ -23,7 +27,7 @@ function Header() {
           <div>
             <div className="hidden md:flex mr-5">
               <VisualsMenu />
-              <h2 className="navBtn" onClick={() => router.push("")}>
+              <h2 className="navBtn" onClick={() => setShowModal(true)}>
                 BOOK
               </h2>
               <h2 className="navBtn" onClick={() => router.push("/about")}>

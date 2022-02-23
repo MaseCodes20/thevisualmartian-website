@@ -1,4 +1,5 @@
 import Head from "next/head";
+import BookModal from "../components/BookModal";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HomeImageSlider from "../components/HomeImageSlider";
@@ -19,6 +20,7 @@ export default function Home() {
         <HomeImageSlider slides={HomeSliderData} />
 
         <Footer />
+        <BookModal />
       </div>
     </div>
   );

@@ -12,4 +12,7 @@
   .navBtn {
     @apply mx-2 cursor-pointer hover:bg-pink-500 hover:text-white p-1 hover:rounded-md;
   }
+  .centeredOnScreen {
+    @apply absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4;
+  }
 }

@@ -8,8 +8,12 @@ import {
   BookOpenIcon,
 } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
+import { useRecoilState } from "recoil";
+import { bookingModalState } from "../atoms/modalAtom";
 
 function MobileMenu() {
+  const [showModal, setShowModal] = useRecoilState(bookingModalState);
+
   const router = useRouter();
   return (
     <div>
@@ -65,7 +69,7 @@ function MobileMenu() {
                   className={`flex items-center px-4 py-2 cursor-pointer ${
                     active && "bg-pink-500 text-white"
                   }`}
-                  onClick={() => router.push("")}
+                  onClick={() => setShowModal(true)}
                 >
                   <BookOpenIcon className="h-6 mr-3" />
                   BOOK
