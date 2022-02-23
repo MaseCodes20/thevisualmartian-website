@@ -63,7 +63,7 @@ function MobileMenu() {
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-pink-500 text-white rounded-b-md"
+                    active && "bg-pink-500 text-white"
                   }`}
                   onClick={() => router.push("")}
                 >

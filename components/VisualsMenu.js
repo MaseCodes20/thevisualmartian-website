@@ -21,7 +21,7 @@ function VisualsMenu() {
                   }`}
                   onClick={() => router.push("/portraits")}
                 >
-                  PORTRAITS
+                  <h2 className="flex-1 text-center">PORTRAITS</h2>
                 </a>
               )}
             </Menu.Item>
@@ -33,7 +33,7 @@ function VisualsMenu() {
                   }`}
                   onClick={() => router.push("/landscape")}
                 >
-                  LANDSCAPE
+                  <h2 className="flex-1 text-center">LANDSCAPE</h2>
                 </a>
               )}
             </Menu.Item>
@@ -45,7 +45,7 @@ function VisualsMenu() {
                   }`}
                   onClick={() => router.push("/videos")}
                 >
-                  VIDEOS
+                  <h2 className="flex-1 text-center">VIDEOS</h2>
                 </a>
               )}
             </Menu.Item>
