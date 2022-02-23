@@ -1,21 +1,14 @@
 import { Menu } from "@headlessui/react";
-import { MenuIcon } from "@heroicons/react/solid";
-import {
-  GlobeIcon,
-  FilmIcon,
-  PhotographIcon,
-  UserIcon,
-  BookOpenIcon,
-} from "@heroicons/react/outline";
 import { useRouter } from "next/router";
+import React from "react";
 
-function MobileMenu() {
+function VisualsMenu() {
   const router = useRouter();
   return (
     <div>
-      <Menu as="div" className="mr-5 md:hidden">
-        <Menu.Button className="md:hidden flex justify-center items-center content-center">
-          <MenuIcon className="h-7 md:hidden hover:text-pink-500" />
+      <Menu as="div">
+        <Menu.Button>
+          <h2 className="navBtn">VISUALS</h2>
         </Menu.Button>
 
         <Menu.Items className="origin-top-right absolute right-0 mr-5 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
@@ -28,7 +21,6 @@ function MobileMenu() {
                   }`}
                   onClick={() => router.push("/portraits")}
                 >
-                  <PhotographIcon className="h-6 mr-3" />
                   PORTRAITS
                 </a>
               )}
@@ -41,7 +33,6 @@ function MobileMenu() {
                   }`}
                   onClick={() => router.push("/landscape")}
                 >
-                  <GlobeIcon className="h-6 mr-3" />
                   LANDSCAPE
                 </a>
               )}
@@ -50,38 +41,11 @@ function MobileMenu() {
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-pink-500 text-white"
+                    active && "bg-pink-500 text-white rounded-b-md"
                   }`}
                   onClick={() => router.push("/videos")}
                 >
-                  <FilmIcon className="h-6 mr-3" />
                   VIDEOS
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-pink-500 text-white rounded-b-md"
-                  }`}
-                  onClick={() => router.push("")}
-                >
-                  <BookOpenIcon className="h-6 mr-3" />
-                  BOOK
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  className={`flex items-center px-4 py-2 cursor-pointer ${
-                    active && "bg-pink-500 text-white rounded-b-md"
-                  }`}
-                  onClick={() => router.push("/about")}
-                >
-                  <UserIcon className="h-6 mr-3" />
-                  ABOUT
                 </a>
               )}
             </Menu.Item>
@@ -92,4 +56,4 @@ function MobileMenu() {
   );
 }
 
-export default MobileMenu;
+export default VisualsMenu;
