@@ -4,7 +4,7 @@ function Footer() {
       <div className="text-center my-5">
         <p className="text-xs">
           Powered by{" "}
-          <a href="https://www.masecodes.com/" target="_blank">
+          <a href="https://www.masecodes.com/" target="_blank" rel="noreferrer">
             Mase Codes
           </a>{" "}
         </p>
@@ -18,6 +18,7 @@ function Footer() {
             <a
               href="https://www.instagram.com/thevisualmartian/"
               target="_blank"
+              rel="noreferrer"
             >
               The Visual Martian
             </a>{" "}
