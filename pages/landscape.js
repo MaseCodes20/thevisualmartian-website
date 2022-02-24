@@ -5,8 +5,9 @@ import Header from "../components/Header";
 
 function landscape() {
   return (
-    <div className="relative">
+    <div className="relative h-screen">
       <Header />
+      <h1 className="centeredOnScreen">Coming Soon!</h1>
       <Footer />
       <BookingModal />
     </div>
