@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 function landscape() {
   return (
-    <div>
+    <div className="relative">
       <Header />
       <Footer />
       <BookingModal />

@@ -7,7 +7,7 @@ import { HomeSliderData } from "../Data/HomeSliderData";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Head>
         <title>The Visual Martian</title>
         <meta name="description" content="Made by Mase Codes" />
