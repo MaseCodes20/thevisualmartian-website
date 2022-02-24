@@ -28,7 +28,7 @@ function Header() {
             <div className="hidden md:flex mr-5">
               <VisualsMenu />
               <h2 className="navBtn" onClick={() => setShowModal(true)}>
-                BOOK
+                BOOKING
               </h2>
               <h2 className="navBtn" onClick={() => router.push("/about")}>
                 ABOUT

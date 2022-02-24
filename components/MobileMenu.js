@@ -72,7 +72,7 @@ function MobileMenu() {
                   onClick={() => setShowModal(true)}
                 >
                   <BookOpenIcon className="h-6 mr-3" />
-                  BOOK
+                  BOOKING
                 </a>
               )}
             </Menu.Item>

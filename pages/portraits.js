@@ -1,5 +1,5 @@
 import React from "react";
-import BookModal from "../components/BookModal";
+import BookingModal from "../components/BookingModal";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -8,7 +8,7 @@ function portraits() {
     <div>
       <Header />
       <Footer />
-      <BookModal />
+      <BookingModal />
     </div>
   );
 }
