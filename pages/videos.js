@@ -7,6 +7,56 @@ function videos() {
   return (
     <div className="relative">
       <Header />
+      <div className="contentContainer pt-20 pb-20 w-full">
+        <div className="text-center">
+          <h1 className="font-bold">Music Videos</h1>
+          <iframe
+            className="mx-auto my-4 xl:w-[560px] xl:h-[315px]"
+            src="https://www.youtube.com/embed/rfa55wFnln4"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="text-center my-5 border-t-2">
+          <h1 className="font-bold">Drone Footage</h1>
+          <div className="xl:grid grid-cols-2 justify-between items-center">
+            <iframe
+              className="mx-auto my-4 xl:w-[560px] xl:h-[315px]"
+              src="https://www.youtube.com/embed/EjTAREBBjHw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              className="mx-auto my-4 xl:w-[560px] xl:h-[315px]"
+              src="https://www.youtube.com/embed/Eq3gSeQ3TQ8"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              className="mx-auto my-4 xl:w-[560px] xl:h-[315px]"
+              src="https://www.youtube.com/embed/V0x_yk82yqw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              className="mx-auto my-4 xl:w-[560px] xl:h-[315px]"
+              src="https://www.youtube.com/embed/KI8xn1tsWtM"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
       <Footer />
       <BookingModal />
     </div>

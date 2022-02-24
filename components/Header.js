@@ -10,7 +10,7 @@ function Header() {
   const [showModal, setShowModal] = useRecoilState(bookingModalState);
 
   return (
-    <div className="w-full fixed bg-white z-10">
+    <div className="w-full fixed top-0 bg-white z-10">
       <div className="my-5">
         <div className="flex justify-between items-center">
           {/* Name or Logo */}

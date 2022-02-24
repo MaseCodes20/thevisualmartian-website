@@ -3,7 +3,7 @@ import { portraitsData } from "../../Data/PortraitsData";
 
 function PortraitsGrid() {
   return (
-    <div className="xl:max-w-screen-xl mx-auto">
+    <div className="contentContainer">
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-1">
         {portraitsData.map((portrait, index) => {
           return (
