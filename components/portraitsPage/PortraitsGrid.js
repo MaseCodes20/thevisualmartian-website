@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { portraitsData } from "../../Data/PortraitsData";
 
@@ -7,7 +8,9 @@ function PortraitsGrid() {
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-1">
         {portraitsData.map((portrait, index) => {
           return (
-            <img
+            <Image
+              height={630}
+              width={413}
               src={portrait.image}
               alt="model portrait Image"
               key={index}
