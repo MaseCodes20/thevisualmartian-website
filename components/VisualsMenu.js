@@ -11,7 +11,7 @@ function VisualsMenu() {
           <h2 className="navBtn">VISUALS</h2>
         </Menu.Button>
 
-        <Menu.Items className="origin-top-right absolute right-0 mr-5 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+        <Menu.Items className="origin-top-right absolute right-0 mr-10 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
           <div className="rounded-md">
             <Menu.Item>
               {({ active }) => (
