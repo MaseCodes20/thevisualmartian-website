@@ -18,7 +18,10 @@ function MobileMenu() {
   return (
     <div>
       <Menu as="div" className="mr-5 md:hidden">
-        <Menu.Button className="md:hidden flex justify-center items-center content-center">
+        <Menu.Button
+          className="md:hidden flex justify-center items-center content-center"
+          name="menu button"
+        >
           <MenuIcon className="h-7 md:hidden hover:text-pink-500" />
         </Menu.Button>
 
