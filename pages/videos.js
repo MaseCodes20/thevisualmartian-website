@@ -20,7 +20,7 @@ function videos() {
           ></iframe>
         </div>
         <div className="text-center my-5 border-t-2">
-          <h1 className="font-bold">Drone Footage</h1>
+          <h1 className="font-bold mt-4">Drone Footage</h1>
           <div className="xl:grid grid-cols-2 justify-between items-center">
             <iframe
               className="mx-auto my-4 xl:w-[560px] xl:h-[315px]"
