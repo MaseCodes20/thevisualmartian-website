@@ -5,17 +5,17 @@ import { portraitsData } from "../../Data/PortraitsData";
 function PortraitsGrid() {
   return (
     <div className="contentContainer">
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
         {portraitsData.map((portrait, index) => {
           return (
-            <Image
-              height={630}
-              width={413}
-              src={portrait.image}
-              alt="model portrait Image"
-              key={index}
-              className="h-[500px] xl:h-[620px] xl:mt-2 mb-2 mt-6 mx-auto "
-            />
+            <div className="relative w-[413px] h-[620px] m-auto" key={index}>
+              <Image
+                src={portrait.image}
+                alt="model portrait Image"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
           );
         })}
       </div>

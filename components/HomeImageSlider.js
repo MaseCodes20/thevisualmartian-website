@@ -12,10 +12,7 @@ function HomeImageSlider({ slides }) {
       <div className="flex">
         {HomeSliderData.map((slide, index) => {
           return (
-            <div
-              className="relative w-[413px] h-[620px] mx-2 bg-red-500"
-              key={index}
-            >
+            <div className="relative w-[413px] h-[620px] mx-2" key={index}>
               <Image
                 src={slide.image}
                 alt="Portrait"
