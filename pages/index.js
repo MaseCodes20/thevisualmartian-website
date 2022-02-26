@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>The Visual Martian</title>
         <meta name="description" content="Made by Mase Codes" />
-        <link rel="icon" href="" />
+        <link rel="icon" href="/ToddMCOMPLXCM.jpg" />
       </Head>
       <div className="relative h-screen">
         <Header />
