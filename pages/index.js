@@ -15,10 +15,7 @@ export default function Home() {
       </Head>
       <div className="relative h-screen">
         <Header />
-        {/* Image slider */}
-
         <HomeImageSlider slides={HomeSliderData} />
-
         <Footer />
         <BookingModal />
       </div>

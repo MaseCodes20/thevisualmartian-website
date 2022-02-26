@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import Image from "next/image";
+import React from "react";
 import { HomeSliderData } from "../Data/HomeSliderData";
 
 function HomeImageSlider({ slides }) {
@@ -8,16 +9,23 @@ function HomeImageSlider({ slides }) {
 
   return (
     <div className="sliderContainer">
-      {HomeSliderData.map((slide, index) => {
-        return (
-          <img
-            src={slide.image}
-            alt="Portrait"
-            className="sliderImages"
-            key={index}
-          />
-        );
-      })}
+      <div className="flex">
+        {HomeSliderData.map((slide, index) => {
+          return (
+            <div
+              className="relative w-[413px] h-[620px] mx-2 bg-red-500"
+              key={index}
+            >
+              <Image
+                src={slide.image}
+                alt="Portrait"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
