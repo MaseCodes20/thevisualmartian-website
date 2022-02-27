@@ -1,3 +1,8 @@
+Photograhy portfolio website,
+Fully responsive for any screen size,
+Optomized Images for fast page loading,
+Booking Modal
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
