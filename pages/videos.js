@@ -15,7 +15,7 @@ function videos() {
       <div className="relative">
         <Header />
         <div className="contentContainer pt-20 pb-20 w-full">
-          <div className="text-center">
+          <div className="text-center mb-8">
             <h1 className="font-bold">Music Videos</h1>
             <iframe
               className="mx-auto my-4 xl:w-[560px] xl:h-[315px]"
@@ -26,7 +26,7 @@ function videos() {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="text-center my-5 border-t-2">
+          <div className="text-center my-5 border-t-2 border-pink-500">
             <h1 className="font-bold mt-4">Drone Footage</h1>
             <div className="xl:grid grid-cols-2 justify-between items-center">
               <iframe

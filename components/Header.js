@@ -16,7 +16,7 @@ function Header() {
           {/* Name or Logo */}
           <div className="ml-5">
             <h1
-              className="font-bold text-xl cursor-pointer"
+              className="font-bold text-xl hover:scale-105 hover:shadow-md cursor-pointer"
               onClick={() => router.push("/")}
             >
               THE VISUAL MARTIAN

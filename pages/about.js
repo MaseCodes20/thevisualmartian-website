@@ -14,14 +14,14 @@ function about() {
       </Head>
       <div className="relative h-screen">
         <Header />
-        <div className="centeredOnScreen w-fit mx-3 lg:mx-0">
+        <div className="centeredOnScreen w-fit mx-3 lg:mx-3">
           <div className="md:flex items-center">
             <img
               src="about/-1720625593_IMG_20190129_194004_963_407382.jpg"
               alt=""
               className="h-[130px] md:h-[200px]"
             />
-            <p className="md:ml-5 md:w-40 mt-2 md:mt-0">
+            <p className="md:ml-5 md:w-40 mt-2 mr-2 lg:mr-0 md:mt-0">
               {`I'm`} a visual artist based in NYC, portrait and lifestyle
               photographer, videographer and graphic artist. Born in Grenada and
               raised in Brooklyn, NY.{" "}
@@ -31,7 +31,7 @@ function about() {
             <img
               src="/about/1828229791_IMG_20190312_160655_636_1829679.jpg"
               alt=""
-              className="h-[160px] md:h-[200px]"
+              className="h-[95px] md:h-[200px]"
             />
             <div className="md:ml-5 mt-2 md:mt-0">
               <div className="italic">
