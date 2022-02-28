@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="absolute bottom-0 w-full bg-white h-[80px]">
-      <div className="text-center  my-3">
+      <div className="text-center  my-2">
         <p className="text-xs">
           Powered by{" "}
           <a href="https://www.masecodes.com/" target="_blank" rel="noreferrer">
@@ -30,11 +30,12 @@ function Footer() {
             href="https://www.instagram.com/thevisualmartian/"
             target="_blank"
             rel="noreferrer"
+            className="mr-1"
           >
             <img
               src="/instagram-icon-white-on-black.png"
               alt="instagram logo"
-              className="h-5"
+              className="h-6"
             />
           </a>
 
@@ -42,11 +43,12 @@ function Footer() {
             href="https://www.youtube.com/channel/UCMRfknmScU6Wi8-lXH3uFOg"
             target="_blank"
             rel="noreferrer"
+            className="ml-1"
           >
             <img
               src="/1006-10064683_youtube-dark-icon-logo-youtube-play-png.png"
               alt="instagram logo"
-              className="h-5"
+              className="h-6"
             />
           </a>
         </div>
