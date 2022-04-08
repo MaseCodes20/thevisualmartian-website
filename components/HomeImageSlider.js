@@ -10,11 +10,12 @@ function HomeImageSlider({ slides }) {
   return (
     <div className="sliderContainer">
       <div className="flex">
-        {HomeSliderData.map((slide, index) => {
+        {HomeSliderData.map((slide) => {
+          const { image, id } = slide;
           return (
-            <div className="relative w-[413px] h-[620px] mx-2" key={index}>
+            <div className="relative w-[413px] h-[620px] mx-2" key={id}>
               <Image
-                src={slide.image}
+                src={image}
                 alt="Portrait"
                 layout="fill"
                 objectFit="contain"

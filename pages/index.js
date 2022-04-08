@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="description" content="Made by Mase Codes" />
         <link rel="icon" href="/ToddMCOMPLXCM.jpg" />
       </Head>
-      <div className="relative h-screen">
+      <div className="relative min-h-screen">
         <Header />
         <HomeImageSlider slides={HomeSliderData} />
         <Footer />

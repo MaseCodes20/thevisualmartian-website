@@ -13,7 +13,7 @@ function BookingModal() {
   };
   return (
     <div>
-      {showModal ? (
+      {showModal && (
         <div
           className="fixed flex top-0 left-0 right-0 bottom-0 items-center justify-center h-screen bg-gray-600/60 z-20"
           ref={modalRef}
@@ -47,7 +47,7 @@ function BookingModal() {
             </div>
           </div>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }
