@@ -4,7 +4,7 @@
 
 @layer components {
   .sliderContainer {
-    @apply flex justify-center w-screen items-center top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 absolute overflow-x-scroll scrollbar-hide;
+    @apply flex justify-center w-screen items-center top-0 left-0 right-0 bottom-0 absolute;
   }
   .sliderImages {
     @apply h-[620px] mx-2;
