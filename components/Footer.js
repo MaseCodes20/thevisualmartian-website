@@ -11,8 +11,10 @@ function Footer() {
         <div className="flex justify-center items-center">
           <img
             src="copyrightlogo.png"
-            alt="copyright log"
-            className="h-3 mr-1 mix-blend-darken"
+            alt="copyright logo"
+            className="mr-1 mix-blend-darken"
+            width="12"
+            height="12"
           />
           <p className="text-xs">
             <a
@@ -35,7 +37,8 @@ function Footer() {
             <img
               src="/instagram-icon-white-on-black.png"
               alt="instagram logo"
-              className="h-6"
+              width="24"
+              height="24"
             />
           </a>
 
@@ -47,8 +50,9 @@ function Footer() {
           >
             <img
               src="/1006-10064683_youtube-dark-icon-logo-youtube-play-png.png"
-              alt="instagram logo"
-              className="h-6"
+              alt="youtube logo"
+              width="24"
+              height="24"
             />
           </a>
         </div>
