@@ -7,8 +7,6 @@ function HomeImageSlider({ slides }) {
     return null;
   }
 
-  console.log(slides[0]);
-
   return (
     <div className="sliderContainer ">
       <div className="overflow-x-scroll scrollbar-hide">

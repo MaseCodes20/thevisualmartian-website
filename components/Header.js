@@ -13,14 +13,10 @@ function Header() {
     <div className="w-full fixed top-0 bg-white z-10">
       <div className="my-5">
         <div className="flex justify-between items-center">
-          {/* Name or Logo */}
-          <button className="ml-5">
-            <h1 className="font-bold text-xl " onClick={() => router.push("/")}>
-              THE VISUAL MARTIAN
-            </h1>
+          <button className="ml-5" onClick={() => router.push("/")}>
+            <h1 className="font-bold text-xl ">THE VISUAL MARTIAN</h1>
           </button>
 
-          {/* Navbar */}
           <div>
             <div className="hidden md:flex mr-5">
               <VisualsMenu />
