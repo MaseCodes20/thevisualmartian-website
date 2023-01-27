@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { HomeSliderData } from "../Data/HomeSliderData";
+import Marquee from "react-fast-marquee";
 
 function HomeImageSlider({ slides }) {
   if (!Array.isArray(slides) || slides.length <= 0) {
@@ -9,12 +10,15 @@ function HomeImageSlider({ slides }) {
 
   return (
     <div className="sliderContainer ">
-      <div className="overflow-x-scroll scrollbar-hide">
+      <Marquee gradient={false} pauseOnClick={true}>
         <div className="flex justify-center items-center min-w-max ">
           {HomeSliderData.map((slide) => {
             const { image, id } = slide;
             return (
-              <div className="relative w-[413px] h-[620px] mr-2" key={id}>
+              <div
+                className="relative w-[380px] xl:w-[413px] h-[440px] xl:h-[590px] "
+                key={id}
+              >
                 <Image
                   src={image}
                   alt="Portrait"
@@ -25,7 +29,7 @@ function HomeImageSlider({ slides }) {
             );
           })}
         </div>
-      </div>
+      </Marquee>
     </div>
   );
 }
