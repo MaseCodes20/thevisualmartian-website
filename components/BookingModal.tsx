@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
-import { useRecoilState } from "recoil";
-import { bookingModalState } from "../atoms/modalAtom";
+import { MouseEvent, useRef } from "react";
+import { useBookingStore } from "../store/useBookingStore";
 
 function BookingModal() {
-  const [showModal, setShowModal] = useRecoilState(bookingModalState);
-  const modalRef = useRef();
+  const { showModal, setShowModal } = useBookingStore();
+  
+  const modalRef = useRef<HTMLDivElement>(null);
 
-  const closeModal = (e) => {
+  const closeModal = (e: MouseEvent<HTMLDivElement>) => {
     if (modalRef.current === e.target) {
       setShowModal(false);
     }
