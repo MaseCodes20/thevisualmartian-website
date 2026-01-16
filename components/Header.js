@@ -1,13 +1,11 @@
 import { useRouter } from "next/router";
-import React from "react";
-import { useRecoilState } from "recoil";
-import { bookingModalState } from "../atoms/modalAtom";
 import MobileMenu from "./MobileMenu";
 import VisualsMenu from "./VisualsMenu";
+import { useBookingStore } from "../store/useBookingStore";
 
 function Header() {
   const router = useRouter();
-  const [showModal, setShowModal] = useRecoilState(bookingModalState);
+  const { showModal, setShowModal } = useBookingStore();
 
   return (
     <div className="w-full fixed top-0 bg-white z-10">

@@ -9,25 +9,24 @@ function HomeImageSlider({ slides }) {
   }
 
   return (
-    <div className="sliderContainer ">
-      <Marquee gradient={false} pauseOnClick={true}>
-        <div className="flex justify-center items-center min-w-max ">
-          {HomeSliderData.map((slide) => {
-            const { image, id } = slide;
-            return (
-              <div
-                className="relative w-[380px] xl:w-[413px] h-[440px] xl:h-[590px] "
-                key={id}
-              >
-                <Image
-                  src={image}
-                  alt="Portrait"
-                  layout="fill"
-                  objectFit="contain"
-                />
-              </div>
-            );
-          })}
+    <div className="sliderContainer w-full">
+      <Marquee gradient={false} pauseOnClick={true} speed={20} play={true}>
+        <div className="flex flex-row">
+          {slides.map((slide) => (
+            <div
+              key={slide.id}
+              className="relative shrink-0 w-[380px] xl:w-[413px] h-[440px] xl:h-[590px]"
+            >
+              <Image
+                src={slide.image}
+                alt="Slider Image"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 380px, 413px"
+                priority={slide.id <= 2}
+              />
+            </div>
+          ))}
         </div>
       </Marquee>
     </div>

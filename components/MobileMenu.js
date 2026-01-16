@@ -1,34 +1,28 @@
-import { Menu } from "@headlessui/react";
-import { MenuIcon } from "@heroicons/react/solid";
-import {
-  GlobeIcon,
-  FilmIcon,
-  PhotographIcon,
-  UserIcon,
-  BookOpenIcon,
-} from "@heroicons/react/outline";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { useRouter } from "next/router";
-import { useRecoilState } from "recoil";
-import { bookingModalState } from "../atoms/modalAtom";
+import { useBookingStore } from "../store/useBookingStore";
+import { Bars3Icon } from "@heroicons/react/16/solid";
+import { BookOpenIcon, FilmIcon, PhotoIcon, UserIcon } from "@heroicons/react/24/outline";
+import { GlobeAltIcon } from "@heroicons/react/24/outline";
 
 function MobileMenu() {
-  const [showModal, setShowModal] = useRecoilState(bookingModalState);
+  const { showModal, setShowModal } = useBookingStore();
 
   const router = useRouter();
   return (
     <div>
       <Menu as="div" className="mr-5 md:hidden">
-        <Menu.Button
+        <MenuButton
           className="md:hidden flex justify-center items-center content-center"
           name="Menu button"
           aria-label="Menu button"
         >
-          <MenuIcon className="h-7 md:hidden hover:text-pink-500" />
-        </Menu.Button>
+          <Bars3Icon className="h-7 md:hidden hover:text-pink-500" />
+        </MenuButton>
 
-        <Menu.Items className="origin-top-right absolute right-0 mr-5 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+        <MenuItems className="origin-top-right absolute right-0 mr-5 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
           <div className="rounded-md">
-            <Menu.Item>
+            <MenuItem>
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -36,12 +30,12 @@ function MobileMenu() {
                   }`}
                   onClick={() => router.push("/portraits")}
                 >
-                  <PhotographIcon className="h-6 mr-3" />
+                  <PhotoIcon className="h-6 mr-3" />
                   PORTRAITS
                 </a>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </MenuItem>
+            <MenuItem>
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -49,12 +43,12 @@ function MobileMenu() {
                   }`}
                   onClick={() => router.push("/landscape")}
                 >
-                  <GlobeIcon className="h-6 mr-3" />
+                  <GlobeAltIcon className="h-6 mr-3" />
                   LANDSCAPE
                 </a>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </MenuItem>
+            <MenuItem>
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -66,8 +60,8 @@ function MobileMenu() {
                   VIDEOS
                 </a>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </MenuItem>
+            <MenuItem>
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -79,8 +73,8 @@ function MobileMenu() {
                   BOOKING
                 </a>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </MenuItem>
+            <MenuItem>
               {({ active }) => (
                 <a
                   className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -92,9 +86,9 @@ function MobileMenu() {
                   ABOUT
                 </a>
               )}
-            </Menu.Item>
+            </MenuItem>
           </div>
-        </Menu.Items>
+        </MenuItems>
       </Menu>
     </div>
   );

@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
-import { useRecoilState } from "recoil";
-import { bookingModalState } from "../atoms/modalAtom";
+import { useRef } from "react";
+import { useBookingStore } from "../store/useBookingStore";
 
 function BookingModal() {
-  const [showModal, setShowModal] = useRecoilState(bookingModalState);
+  const { showModal, setShowModal } = useBookingStore();
+  
   const modalRef = useRef();
 
   const closeModal = (e) => {
