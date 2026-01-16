@@ -10,12 +10,12 @@ function HomeImageSlider({ slides }) {
 
   return (
     <div className="sliderContainer w-full">
-      <Marquee gradient={false} pauseOnClick={true} speed={20} play={true}>
+      <Marquee gradient={false} pauseOnClick={true} speed={20} play={true} className="">
         <div className="flex flex-row">
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="relative shrink-0 w-[380px] xl:w-[413px] h-[440px] xl:h-[590px]"
+              className="relative w-[380px] xl:w-[413px] h-[440px] xl:h-[560px]"
             >
               <Image
                 src={slide.image}
