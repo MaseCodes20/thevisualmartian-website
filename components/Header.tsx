@@ -5,14 +5,14 @@ import { useBookingStore } from "../store/useBookingStore";
 
 function Header() {
   const router = useRouter();
-  const { showModal, setShowModal } = useBookingStore();
+  const { setShowModal } = useBookingStore();
 
   return (
     <div className="w-full fixed top-0 bg-white z-10">
       <div className="my-5">
         <div className="flex justify-between items-center">
-          <button className="ml-5" onClick={() => router.push("/")}>
-            <h1 className="font-bold text-xl ">THE VISUAL MARTIAN</h1>
+          <button className="ml-5 font-bold text-xl cursor-pointer" onClick={() => router.push("/")}>
+            THE VISUAL MARTIAN
           </button>
 
           <div>

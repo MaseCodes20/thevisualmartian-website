@@ -1,5 +1,4 @@
 import Head from "next/head";
-import React from "react";
 import BookingModal from "../components/BookingModal";
 import Footer from "../components/Footer";
 import Header from "../components/Header";

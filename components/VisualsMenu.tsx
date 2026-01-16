@@ -1,18 +1,17 @@
-import { Menu } from "@headlessui/react";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { useRouter } from "next/router";
-import React from "react";
 
 function VisualsMenu() {
   const router = useRouter();
   return (
     <Menu as="div">
-      <Menu.Button>
+      <MenuButton>
         <h2 className="navBtn">VISUALS</h2>
-      </Menu.Button>
+      </MenuButton>
 
-      <Menu.Items className="origin-top-right absolute right-0 mr-10 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+      <MenuItems className="origin-top-right absolute right-0 mr-10 mt-4 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
         <div className="rounded-md">
-          <Menu.Item>
+          <MenuItem>
             {({ active }) => (
               <a
                 className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -23,8 +22,8 @@ function VisualsMenu() {
                 <h2 className="flex-1 text-center">PORTRAITS</h2>
               </a>
             )}
-          </Menu.Item>
-          <Menu.Item>
+          </MenuItem>
+          <MenuItem>
             {({ active }) => (
               <a
                 className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -35,8 +34,8 @@ function VisualsMenu() {
                 <h2 className="flex-1 text-center">LANDSCAPE</h2>
               </a>
             )}
-          </Menu.Item>
-          <Menu.Item>
+          </MenuItem>
+          <MenuItem>
             {({ active }) => (
               <a
                 className={`flex items-center px-4 py-2 cursor-pointer ${
@@ -47,9 +46,9 @@ function VisualsMenu() {
                 <h2 className="flex-1 text-center">VIDEOS</h2>
               </a>
             )}
-          </Menu.Item>
+          </MenuItem>
         </div>
-      </Menu.Items>
+      </MenuItems>
     </Menu>
   );
 }

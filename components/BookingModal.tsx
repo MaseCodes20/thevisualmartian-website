@@ -1,12 +1,12 @@
-import { useRef } from "react";
+import { MouseEvent, useRef } from "react";
 import { useBookingStore } from "../store/useBookingStore";
 
 function BookingModal() {
   const { showModal, setShowModal } = useBookingStore();
   
-  const modalRef = useRef();
+  const modalRef = useRef<HTMLDivElement>(null);
 
-  const closeModal = (e) => {
+  const closeModal = (e: MouseEvent<HTMLDivElement>) => {
     if (modalRef.current === e.target) {
       setShowModal(false);
     }

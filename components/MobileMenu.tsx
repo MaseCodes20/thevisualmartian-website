@@ -6,7 +6,7 @@ import { BookOpenIcon, FilmIcon, PhotoIcon, UserIcon } from "@heroicons/react/24
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 
 function MobileMenu() {
-  const { showModal, setShowModal } = useBookingStore();
+  const { setShowModal } = useBookingStore();
 
   const router = useRouter();
   return (
