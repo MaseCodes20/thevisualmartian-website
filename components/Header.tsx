@@ -11,7 +11,7 @@ function Header() {
     <div className="w-full fixed top-0 bg-white z-10">
       <div className="my-5">
         <div className="flex justify-between items-center">
-          <button className="ml-5 font-bold text-xl cursor-pointer" onClick={() => router.push("/")}>
+          <button className="ml-5 font-bold text-xl cursor-pointer hover:text-pink-500" onClick={() => router.push("/")}>
             THE VISUAL MARTIAN
           </button>
 
